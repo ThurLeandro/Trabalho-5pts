@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>questao 6</title>
+</head>
+
+<body>
+<script>
+  var p = parseInt(prompt("Digite o codigo do produto que você quer:"))
+  var quant = parseInt(prompt("Digite quantos você vai querer: "))
+  var valor1 = 1.70
+  var valor2 = 2.30
+  var valor3 = 2.60
+  var valor4 = 2.40
+  var valor5 = 2.50
+  var valor6 = 1.0
+  
+  var preco1 = valor1 * quant
+  var preco2 = valor2 * quant
+  var preco3 = valor3 * quant
+  var preco4 = valor4 * quant
+  var preco5 = valor5 * quant
+  var preco6 = valor6 * quant
+  
+  switch(p){
+    case 100: document.write("Total a pagar: "+preco1);
+    break;
+    case 101: document.write("Total a pagar: "+preco2)
+    break;
+    case 102: document.write("Total a pagar: "+preco3);
+    break;
+    case 103: document.write("Total a pagar: "+preco4);
+    break;
+    case 104: document.write("Total a pagar: "+preco5);
+    break;
+    case 105: document.write("Total a pagar: "+preco6);
+    break;
+    default: alert("Produto Inexistente!!");
+    document.write("Errror 404")
+  }
+  
+  
+</script>
+</body>
+
+</html>

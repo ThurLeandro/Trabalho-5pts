@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>questao 3</title>
+  <script> // 3 QUESTAO 
+
+var nome = prompt("digite seu nome")
+var anoN = parseInt(prompt("digite seu ano de nascimento"))
+var anoI = parseInt(prompt("Digite seu ano de ingressão: "))
+var anoA = 2022;
+var idade = anoA - anoN;
+var tempT = anoA - anoI; 
+
+if(idade >= 65 && idade <= 75 && tempT >= 30 && tempT <= 45 ){
+  document.write("Empregado: "+ nome)
+  document.write("<br> idade: "+idade)
+  document.writeln("<br> tempo de trabalho: "+tempT)
+  document.writeln("Requer aposentadoria")
+  }else if(idade < 65 && idade >= 0 && tempT < 30 && tempT >= 0){
+  document.writeln("Nao requer aposentadoria")}else if(idade > 45 && tempT > 75  ){
+    document.write("Error 404")
+  }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
